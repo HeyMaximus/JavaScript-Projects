@@ -3,7 +3,7 @@ A collections of my JavaScript projects built while learning JS from Codeacademy
 
 ## Projects practicing conditionals:  
 ### Magic Eight Ball  
-  I built a Magic Eight Ball using control flow in JavaScript.  
+   A Magic Eight Ball using control flow in JavaScript that prints results to console. 
 ### Race Day  
 
 ## Projects practicing functions:    
