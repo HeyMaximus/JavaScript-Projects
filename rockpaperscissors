@@ -1,0 +1,69 @@
+//obtain user's selection
+const getUserChoice = (userInput) => {
+  userInput = userInput.toLowerCase();
+  if (
+    userInput === "rock" ||
+    userInput === "paper" ||
+    userInput === "scissors" ||
+    userInput === "bomb"
+  ) {
+    return userInput;
+  } else {
+    console.log("Invalid choice. Please enter: rock, paper, or scissors.");
+  }
+};
+
+//generates computer's selection
+function getComputerChoice() {
+  switch (Math.floor(Math.random() * 3)) {
+    case 0:
+      return "rock";
+    case 1:
+      return "paper";
+    case 2:
+      return "scissors";
+  }
+}
+
+//defines conditions for win, ties, and losses, "bomb" always results in win. Inlucded as easter egg.
+const determineWinner = (userChoice, computerChoice) => {
+  if (userChoice === "bomb") {
+    return "You win!";
+  }
+
+  if (userChoice === computerChoice) {
+    return `It's a tie!`;
+  }
+  if (userChoice === "rock") {
+    if (computerChoice === "paper") {
+      return "Computer wins!";
+    } else {
+      return "You win!";
+    }
+  }
+  if (userChoice === "paper") {
+    if (computerChoice === "scissors") {
+      return "Computer wins!";
+    } else {
+      return "You win!";
+    }
+  }
+  if (userChoice === "scissors") {
+    if (computerChoice === "rock") {
+      return "Computer wins!";
+    } else {
+      return "You win!";
+    }
+  }
+};
+
+//function to run the game and print results to console
+playGame = () => {
+  let userChoice = getUserChoice("bomb");
+  let computerChoice = getComputerChoice();
+  console.log(
+    `You threw ${userChoice} while the computer threw ${computerChoice}!`
+  );
+  console.log(determineWinner(userChoice, computerChoice));
+};
+playGame();
