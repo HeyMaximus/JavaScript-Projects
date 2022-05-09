@@ -1,10 +1,8 @@
 # JavaScript-Projects
 A collections of my JavaScript projects built while learning JS from Codeacademy.com
 
-## Projects practicing conditionals:  
-### Magic 8 Ball  
+## Magic 8 Ball (practicing conditionals)  
    A Magic 8 Ball using control flow in JavaScript that prints results to console.  
 
-## Projects practicing functions:    
-### Rock, Paper, Scissors
+## Rock, Paper, Scissors (practicing functions)    
    A rock, paper, scissors game layering sequential functions.
