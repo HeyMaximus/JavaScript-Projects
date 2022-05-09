@@ -1,11 +1,13 @@
-let userName = "John";
-userName ? console.log(`Hello, ${userName}!`) : console.log("Hello!");
+let userName = "John"; //edit to redefine name
+userName ? console.log(`Hello, ${userName}!`) : console.log("Hello!"); //creates personalized greeting, defaults to just "Hello" if name is null.
 
 let userQuestion = "When will I meet my true love?";
 
-userName
+userName //prints results to console.
   ? console.log(userName + " asked " + userQuestion.toLowerCase())
   : console.log("You asked " + userQuestion.toLowerCase());
+
+//the following generates a random integer between 0-6, and then matches a string text consistent with a traditional magic 8 ball.
 
 let randomNumber = Math.floor(Math.random() * 8);
 let eightBall = "";
